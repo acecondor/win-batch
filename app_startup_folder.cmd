@@ -18,6 +18,7 @@ goto END
 :CURRENT_USER
 explorer.exe "%HOMEDRIVE%\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 
+goto END
 
 :ALL_USERS:
 explorer.exe "%HOMEDRIVE%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
