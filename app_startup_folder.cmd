@@ -1,6 +1,3 @@
-# v2020.05.24.01
-# Maurizio Condini - www.defcon.it
-
 @echo off
 
 rem %SystemDrive% operation system drive
