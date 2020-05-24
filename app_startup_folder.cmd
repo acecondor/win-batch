@@ -7,13 +7,15 @@ echo.
 echo C - current user startup folder
 echo A - all users startup folder
 echo B - both (corrent and all users)
-echo Press enter to exit
+echo E - EXIT
 echo.
-SET /P ENABLE=[C, A, B press ENTER to exit]
 
-IF /I "%ENABLE%"=="C" goto CURRENT_USER
-IF /I "%ENABLE%"=="A" goto ALL_USERS
-IF /I "%ENABLE%"=="B" goto BOTH
+choice /n /c:CABE /M "Press C, A, B or E to exit"
+
+if errorlevel 1 goto CURRENT_USER
+if errorlevel 2 goto ALL_USERS
+if errorlevel 3 goto BOTH
+if errorlevel 4 goto END
 
 goto END
 
@@ -32,4 +34,3 @@ goto END
 
 :END
 exit
-
