@@ -11,3 +11,4 @@
 - spotify_cache: delete and edit Spotify cache size
 - trim_ssd: ADMIN check and enable TRIM support
 - win_install_date: show install date operating system
+- Pref_IPvX: configuring IPv6 in Windows
